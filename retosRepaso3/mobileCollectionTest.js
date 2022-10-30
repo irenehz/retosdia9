@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var mobileCollection_1 = require("./mobileCollection");
+var mobile_1 = require("./mobile");
+var myMobile = new mobile_1.Mobile('13', 'iPhone', 'x pro max ultra', 'blue', 150);
+var myMobile2 = new mobile_1.Mobile('pco', 'xiaomi', 'mega ultra pro', 'red', 50);
+var myMobile3 = new mobile_1.Mobile('13', 'xiaomi', 'mega ultra pro', 'green', 100);
+var myMobile4 = new mobile_1.Mobile('pco', 'iPhone', 'x pro max ultra', 'black', 200);
+var myMobiles = [myMobile, myMobile2, myMobile3, myMobile4];
+var myCollection = new mobileCollection_1.mobileCollection(myMobiles);
+console.log(myCollection.getMobiles());
+myCollection.setMobiles([myMobile, myMobile2]);
+console.log(myCollection.getMobiles());
+console.log(myCollection.getTotalPrice());
+myCollection.printCollection();

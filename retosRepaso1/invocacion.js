@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var buclesWhile_1 = require("./buclesWhile");
+var buclesFor_1 = require("./buclesFor");
+var arrayC = ["Casa", "Coche", "Ciudad", "Cesta"];
+(0, buclesWhile_1.hasEven)((0, buclesFor_1.add)(arrayC));
+var arrayB = ["Barco", "Baca", "Bicicleta", "Balon", "Bisiesto", "Brasil"];
+(0, buclesWhile_1.hasEven)((0, buclesFor_1.add)(arrayB));
+var arrayV = ["Venezuela", "Veneno", "Voltaje"];
+(0, buclesWhile_1.hasEven)((0, buclesFor_1.add)(arrayV));

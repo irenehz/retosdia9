@@ -1,0 +1,26 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var mobile_1 = require("./mobile");
+var myMobile = new mobile_1.mobile('name', 'trademark', 'model', 'color', 'price');
+var myMobile2 = new mobile_1.mobile('name', 'trademark', 'model', 'color', 'price');
+var myMobile3 = new mobile_1.mobile('name', 'trademark', 'model', 'color', 'price');
+console.log(myMobile.getName());
+console.log(myMobile.getTrademark());
+console.log(myMobile.getModel());
+console.log(myMobile.getColor());
+console.log(myMobile.getPrice());
+myMobile.setName("11");
+myMobile.setTrademark("iphone");
+myMobile.setModel("pro");
+myMobile.setColor("blanco");
+myMobile.setPrice(800);
+console.log(myMobile.getName());
+console.log(myMobile.getTrademark());
+console.log(myMobile.getModel());
+console.log(myMobile.getColor());
+console.log(myMobile.getPrice());
+console.log(myMobile.caracteristicas());
+var myMobiles = [myMobile, myMobile2, myMobile3];
+myMobiles.forEach(function (mobile) {
+    console.log(mobile.caracteristicas());
+});
